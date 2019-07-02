@@ -1,0 +1,45 @@
+
+
+.header{
+  color: white;
+  font-size: 1.3em;
+  margin-right: 50px;
+}
+.contexts{
+  margin-top: 60px;
+}
+
+.new-wrap{
+
+  margin-left: 30%;
+  width: 40%;
+}
+
+.form{
+  border: 1px inset #bfbd89;
+  border-radius: 20px;
+  padding: 10% 5%;
+}
+.show-wrap{
+  width: 80%;
+  margin-left: 10%;
+  padding-top: 10px;
+  text-align: center;
+
+}
+
+.show-body{
+  text-align: justify;
+}
+.container.contexts{
+  min-height: 80vh;
+}
+
+.a-blog{
+  width: 80%;
+  margin-left: 3%;
+  padding-top: 10px;
+}
+.inl{
+  display: inline;
+}

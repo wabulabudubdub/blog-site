@@ -1,0 +1,35 @@
+<% include partials/header%>
+
+<div class="ui">
+
+  <div class="ui  segment">
+    <div class="ui huge header">
+      <%= blog.title%>
+    </div>
+    <span><em><%= blog.date.toDateString()%></em></span>
+
+    <br>
+    <span>
+
+      <form class="inl" action="/blogs/<%= blog._id%>?_method=DELETE" method="post">
+        <button class="ui basic small button">delete</button>
+      </form>
+
+      <form class ="inl" action="/blogs/<%= blog._id%>/edit" method="get">
+        <button class="ui basic small button">edit</button>
+      </form>
+    </span>
+
+  </div>
+
+   <div class="form show-wrap">
+        <div class="show-img">
+            <img src="<%= blog.image%>" alt="image">
+        </div>
+        <div class="show-body">
+            <p style="white-space: pre-wrap;"><%= blog.body%></p>
+        </div>
+   </div>
+
+
+<% include partials/footer%>

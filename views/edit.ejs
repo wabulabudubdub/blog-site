@@ -1,0 +1,25 @@
+<% include partials/header%>
+<div class="wrap-wr">
+<div class="new-wrap">
+<form class="ui form context" action="/blogs/<%= blog._id%>?_method=put" method="post">
+  <div class="field">
+    <label>Title</label>
+    <input type="text" name="blog[title]" placeholder="title" value="<%= blog.title%>">
+  </div>
+  <div class="field">
+    <label>Image</label>
+    <input type="text" name="blog[image]" placeholder="image url" value="<%= blog.image%>">
+  </div>
+  <div class="ui">
+      <div class="field">
+      <label>Text</label>
+      <textarea name="blog[body]"><%= blog.body%></textarea>
+  </div>
+
+  <button class="ui button big" type="submit">Update</button>
+  <a href="/blogs/<%= blog._id%>"> <button class="ui button big" type="button" name="button">Cancel</button></a>
+</form>
+</div>
+</div>
+
+<% include partials/footer%>

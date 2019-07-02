@@ -1,0 +1,24 @@
+<% include partials/header%>
+<div class="wrap-wr">
+<div class="new-wrap">
+<form class="ui form context" action="/blogs" method="post">
+  <div class="field">
+    <label>Title</label>
+    <input type="text" name="blog[title]" placeholder="title">
+  </div>
+  <div class="field">
+    <label>Image</label>
+    <input type="text" name="blog[image]" placeholder="image url">
+  </div>
+  <div class="ui">
+      <div class="field">
+      <label>Text</label>
+      <textarea name="blog[body]"></textarea>
+  </div>
+
+  <button class="ui button big" type="submit">Submit</button>
+</form>
+</div>
+</div>
+
+<% include partials/footer%>
